@@ -1,0 +1,234 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "firstname": " Srini",
+      "lastname": "praksh",
+      "emailid": " pasjj",
+      "mobileno": " 13131",
+      "salary": " 21313"
+    },
+    {
+      "id": 3,
+      "firstname": " Srini",
+      "emailid": " pasjj",
+      "mobileno": " 13131",
+      "salary": " 21313"
+    },
+    {
+      "id": 4,
+      "firstname": " Srini",
+      "emailid": " srinivasan@gmail.com",
+      "mobileno": " 788999`99`",
+      "salary": " 12000"
+    },
+    {
+      "id": 5,
+      "firstname": null,
+      "emailid": null,
+      "mobileno": null,
+      "salary": null
+    },
+    {
+      "id": 6,
+      "firstname": " shdgjasgd",
+      "emailid": " dfsjsahdf",
+      "mobileno": " sadf",
+      "salary": " sadf"
+    },
+    {
+      "id": 7,
+      "firstname": "dfjsd",
+      "emailid": "sdfsdf",
+      "mobileno": "sdfsdf",
+      "salary": "1234"
+    },
+    {
+      "id": 8,
+      "firstname": " asdas",
+      "emailid": " asd",
+      "mobileno": " asd",
+      "salary": " asd"
+    },
+    {
+      "id": 9,
+      "firstname": null,
+      "emailid": null,
+      "mobileno": null,
+      "salary": null
+    },
+    {
+      "id": 10,
+      "firstname": " ansj",
+      "emailid": " sdgashdg",
+      "mobileno": " sdgashdg",
+      "salary": " sdgashdg"
+    },
+    {
+      "id": 11,
+      "firstname": null,
+      "emailid": null,
+      "mobileno": null,
+      "salary": null
+    },
+    {
+      "id": 12,
+      "firstname": null,
+      "emailid": null,
+      "mobileno": null,
+      "salary": null
+    },
+    {
+      "id": 13,
+      "firstname": " ansj",
+      "emailid": " sdgashdg",
+      "mobileno": " sdgashdg",
+      "salary": " "
+    },
+    {
+      "id": 14,
+      "firstname": "X",
+      "emailid": "X",
+      "mobileno": "X",
+      "salary": " "
+    },
+    {
+      "id": 15,
+      "firstname": " ansj",
+      "emailid": " sdgashdg",
+      "mobileno": " sdgashdg",
+      "salary": " sdgashdg"
+    },
+    {
+      "id": 16,
+      "firstname": null,
+      "emailid": null,
+      "mobileno": null,
+      "salary": null
+    },
+    {
+      "id": 17,
+      "firstname": " ansj",
+      "emailid": " sdgashdg",
+      "mobileno": " sdgashdg",
+      "salary": " sdgashdg"
+    },
+    {
+      "id": 18,
+      "firstname": null,
+      "emailid": null,
+      "mobileno": null,
+      "salary": null
+    },
+    {
+      "id": 19,
+      "firstname": null,
+      "emailid": null,
+      "mobileno": null,
+      "salary": null
+    },
+    {
+      "id": 20,
+      "firstname": " ",
+      "emailid": " ",
+      "mobileno": " ",
+      "salary": " "
+    },
+    {
+      "id": 21,
+      "firstname": null,
+      "emailid": null,
+      "mobileno": null,
+      "salary": null
+    },
+    {
+      "id": 22,
+      "firstname": " ansj",
+      "emailid": null,
+      "mobileno": null,
+      "salary": null
+    },
+    {
+      "id": 23,
+      "firstname": null,
+      "emailid": null,
+      "mobileno": null,
+      "salary": null
+    },
+    {
+      "id": 24,
+      "firstname": " ansj",
+      "emailid": " sdgashdg",
+      "mobileno": " sdgashdg",
+      "salary": " sdgashdg"
+    },
+    {
+      "id": 25,
+      "firstname": " ansj",
+      "emailid": " sdgashdg",
+      "mobileno": " sdgashdg",
+      "salary": " sdgashdg"
+    },
+    {
+      "id": 26,
+      "firstname": null,
+      "emailid": null,
+      "mobileno": null,
+      "salary": null
+    },
+    {
+      "id": 27,
+      "firstname": " ansj",
+      "emailid": " sdgashdg",
+      "mobileno": " sdgashdg",
+      "salary": " sdgashdg"
+    },
+    {
+      "id": 28,
+      "firstname": " ansj",
+      "lastname": " sdgashdg",
+      "emailid": " sdgashdg",
+      "mobileno": " sdgashdg",
+      "salary": " sdgashdg"
+    },
+    {
+      "id": 29,
+      "firstname": " ansj",
+      "lastname": " sdgashdg",
+      "emailid": " sdgashdg",
+      "mobileno": " sdgashdg",
+      "salary": " sdgashdg"
+    },
+    {
+      "id": 30,
+      "firstname": " ansj",
+      "lastname": " sdgashdg",
+      "emailid": " sdgashdg",
+      "mobileno": " sdgashdg",
+      "salary": " sdgashdg"
+    },
+    {
+      "id": 31,
+      "firstname": "praksh",
+      "lastname": "mysore",
+      "emailid": "asgjahgd@gmail.com",
+      "mobileno": "123456789",
+      "salary": "120000"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
