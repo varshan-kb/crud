@@ -1,10 +1,11 @@
+<!-- New  -->
 <nav class="navbar navbar-light bg-primary">
   <div class="Container-fluid">
     <h1 style="color:aliceblue;">Angular CRUD</h1>
   </div>
   <div class="d-flex">
-    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success">Add
-      Employee</button>
+    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+      class="btn btn-success">Add-Employee</button>
   </div>
 </nav>
 
@@ -23,19 +24,18 @@
   <tbody>
     <tr *ngFor="let row of employeeData">
       <td>{{row.id}}</td>
-      <td>{{row.firstname}}</td>
-      <td>{{row.lastname}}</td>
+      <td>{{row.firstname | titlecase}}</td>
+      <td>{{row.lastname | uppercase}}</td>
       <td>{{row.emailid}}</td>
-      <td>{{row.mobilenumber}}</td>
+      <td>{{row.mobilenumber}}
       <td>{{row.salary}}</td>
       <td>
-        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1" (click)="onEdit(row)"
+        <button type="button" data-bs-toggle="modal1" data-bs-target="#exampleModal1" (click)="onEdit(row)"
           class="btn btn-info">Edit</button>
         <button (click)="deleteEmployee(row)" class="btn btn-danger mx-3">Delete</button>
       </td>
     </tr>
   </tbody>
-
 </table>
 
 <!-- Add -->
@@ -49,23 +49,26 @@
           <span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body">
-        <form [formGroup]="formValue" ,>
+        <form [formGroup]="formValue">
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">ID</label>
-            <input type="text" formControlName="id" class="form-control" id="exampleInputEmail1"
-              aria-describedby="emailHelp">
-            <div>
+            <label for="exampleInputPassword1" class="form-label">First Name</label>
+            <input type="text" formControlName="firstname" class="form-control" id="firstname">
+            <!-- ((formValue.get('firstName'))?.touched || (formValue.get('firstName'))?.dirty) && (formValue.get('firstName'))?.invalid -->
+            <div *ngIf="(firstname?.touched || firstname?.dirty) && firstname?.invalid" class="alert alert-danger">
+              <div *ngIf="firstname?.hasError('required')">Name is requried.</div>
+              <div *ngIf="firstname?.hasError('pattern')">Only characters are allowed</div>
+              <div *ngIf="firstname?.hasError('minLength') && firstname?.hasError('maxLength')" class="alert alert-danger">Name of the characters should between 2 to 10 only.</div>
             </div>
           </div>
-          <!-- <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">First Name</label>
-            <input type="text" formControlName="firstname" class="form-control" id="exampleInputEmail1"
-              aria-describedby="emailHelp">
-
-             <input change)="branch_name_change(Currentbranchid)" 
-                       bindLabel="branch_name" name="branch_id"
-                      #branch_id="ngModel" [(ngModel)]="Currentbranchid" placeholder="Branch Name">
-          </div> -->
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Last Name</label>
+            <input type="text" formControlName="lastname" class="form-control" id="lastname">
+            <div *ngIf="(lastname?.touched || lastname?.dirty) && lastname?.invalid" class="alert alert-danger">
+              <div *ngIf="lastname?.hasError('required')">Last-Name is requried.</div>
+              <div *ngIf="lastname?.hasError('pattern')">Only characters are allowed</div>
+              <div *ngIf="lastname?.hasError('minLength') && lastname?.hasError('maxLength')" class="alert alert-danger">Name of the characters should between 2 to 10 only.</div>
+            </div>
+          </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Email ID</label>
             <input type="mail" formControlName="emailid" class="form-control" id="exampleInputPassword1">
@@ -73,16 +76,9 @@
 
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Mobile No</label>
-            <input type="text" formControlName="mobileno" class="form-control" id="exampleInputPassword3">
+            <input type="text" formControlName="mobileNumber" class="form-control" id="exampleInputPassword3">
           </div>
-          <!--<div class="mb-3" *ngFor="let row of employeeData">
-            <label for="exampleInputPassword1" class="form-label">Mobile No</label>
-            <input type="text" formControlName="mobileno" class="form-control" id="name" name="name" required
-              maxlength="10" [(ngModel)]="name" #name="ngModel">
-            <div *ngIf="name.errors?.maxlength">
-              Name must be at least 4 characters long.
-            </div>
-          </div>-->
+
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Salary</label>
             <input type="text" formControlName="salary" class="form-control" id="exampleInputPassword1">
@@ -95,64 +91,49 @@
       </div>
     </div>
   </div>
-</div>
-<!--Upadate-->
-<!-- <div class="modal fade" id="exampleModal1" tabind ex="-1" role="dialog" aria-labelledby="exampleModalLabel1"
-<!--   aria-hidden="true"> -->
-<!--   <div class="modal-dialog" role="document"> -->
-<!--     <div class="modal-content"> -->
-<!--       <div class="modal-header"> -->
-<!--         <h5 class="modal-title" id="exampleModalL label1">Update Employee Details</h5>
-<!--         <button type="button" class="close" data bs-dismiss="modal" aria-label="Close">
-<!--           <span aria-hidden="true">&times;</span> </button>
-<!--       </div> -->
-<!--       <div class="modal-body"> -->
-<!--         <form [formGroup]="formValue"> -->
-<!--           <div class="mb-3"> -->
-<!--             <label for="exampleInputEmail1" class ="form-label">ID</label>
-<!--             <input type="text" formControlName="i d" class="form-control" id="exampleInputEmail1"
-<!--               aria-describedby="emailHelp"> -->
-<!--             <div> -->
-<!--  -->
-<!--             </div> -->
-<!--           </div> -->
-<!--           <div class="mb-3"> -->
-<!--             <label for="exampleInputEmail1" class ="form-label">First Name</label>
-<!--             <input type="text" formControlName="f irstname" class="form-control" id="exampleInputEmail1"
-<!--               aria-describedby="emailHelp"> -->
-<!--           </div> -->
-          <!--<div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">First Name</label>
-            <input type="text"  class="form-control" formControlName="firstName" [ngClass]="{'is-invalid':form.get('firstName').touched && form.get('firstName').invalid}" required />
-            <div class="invalid-feedback">
-              <div>First Name is required</div>
+
+  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Add Employee Details</h5>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="formValue">
+            <!--  <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">ID</label>
+            <input type="text" formControlName="id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div> -->
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">First Name</label>
+              <input type="text" formControlName="firstname" class="form-control" id="exampleInputPassword1">
             </div>
-          </div>-->
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Last Name</label>
+              <input type="text" formControlName="lastname" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Email ID</label>
+              <input type="mail" formControlName="emailid" class="form-control" id="exampleInputPassword1">
+            </div>
 
-         <!--  <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Last Name</label>
-            <input type="text" formControlName="lastname" class="form-control" id="exampleInputPassword1">
-          </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Mobile No</label>
+              <input type="text" formControlName="mobileNumber" class="form-control" id="exampleInputPassword3">
+            </div>
 
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Email ID</label>
-            <input type="mail" formControlName="emailid" class="form-control" id="exampleInputPassword1">
-          </div>
-
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Mobile No</label>
-            <input type="text" formControlName="mobileno" class="form-control" id="exampleInputPassword3">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Salary</label>
-            <input type="text" formControlName="salary" class="form-control" id="exampleInputPassword1">
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" id="cancel1" class="btn btn-secondary()" data-bs-dismiss="modal">Close</button>
-        <button type="button" (click)="updateEmployeeDetails()" class="btn btn-primary">Update</button>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Salary</label>
+              <input type="text" formControlName="salary" class="form-control" id="exampleInputPassword1">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="cancel" class="btn btn-secondary()" data-bs-dismiss="modal">Close</button>
+          <button type="button" (click)="postEmployeeDetails()" class="btn btn-primary">Add</button>
+        </div>
       </div>
     </div>
-  </div>
-</div> -->
