@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { DashComponent } from './dash/dash.component';
 import { VarshanComponent } from './varshan/varshan.component';
+import { PrakshComponent } from './praksh/praksh.component';
 
 
 
@@ -18,6 +19,7 @@ import { VarshanComponent } from './varshan/varshan.component';
     EmployeeDashBoardComponent,
     DashComponent,
     VarshanComponent,
+    PrakshComponent,
 
   ],
   imports: [
