@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { DashComponent } from './dash/dash.component';
+import { VarshanComponent } from './varshan/varshan.component';
 
 
 
@@ -16,6 +17,7 @@ import { DashComponent } from './dash/dash.component';
     AppComponent,
     EmployeeDashBoardComponent,
     DashComponent,
+    VarshanComponent,
 
   ],
   imports: [
