@@ -7,6 +7,7 @@ import { EmployeeDashBoardComponent } from './employee-dash-board/employee-dash-
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import { DashComponent } from './dash/dash.component';
 
 
 
@@ -14,6 +15,7 @@ import {FormsModule} from '@angular/forms';
   declarations: [
     AppComponent,
     EmployeeDashBoardComponent,
+    DashComponent,
 
   ],
   imports: [
