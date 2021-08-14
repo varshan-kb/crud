@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 8,
+      "firstname": " ansj",
+      "lastname": " sdgashdg",
+      "emailid": " sdgashdg",
+      "mobileno": " sdgashdg",
+      "salary": " sdgashdg"
+    },
+    {
+      "id": 9,
+      "firstname": " ansj",
+      "lastname": " sdgashdg",
+      "emailid": " sdgashdg",
+      "mobileno": "131321",
+      "salary": "2123"
+    },
+    {
+      "id": 10,
+      "firstname": " ansj",
+      "lastname": " sdgashdg",
+      "emailid": " sdgashdg",
+      "mobileno": "1234567891",
+      "salary": "120000"
+    },
+    {
+      "id": 11,
+      "firstname": " ansj",
+      "lastname": " sdgashdg",
+      "emailid": " sdgashdg",
+      "salary": "132"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
