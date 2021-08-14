@@ -39,7 +39,7 @@
 </table>
 
 <!-- Add -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
   aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -52,9 +52,9 @@
         <form [formGroup]="formValue">
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">First Name</label>
-            <input type="text" formControlName="firstname" class="form-control" id="firstname">
+            <input type="text" formControlName="firstname" class="form-control" id="firstname"> -->
             <!-- ((formValue.get('firstName'))?.touched || (formValue.get('firstName'))?.dirty) && (formValue.get('firstName'))?.invalid -->
-            <div *ngIf="(firstname?.touched || firstname?.dirty) && firstname?.invalid" class="alert alert-danger">
+           <!--  <div *ngIf="(firstname?.touched || firstname?.dirty) && firstname?.invalid" class="alert alert-danger">
               <div *ngIf="firstname?.hasError('required')">Name is requried.</div>
               <div *ngIf="firstname?.hasError('pattern')">Only characters are allowed</div>
               <div *ngIf="firstname?.hasError('minLength') && firstname?.hasError('maxLength')" class="alert alert-danger">Name of the characters should between 2 to 10 only.</div>
@@ -90,9 +90,9 @@
         <button type="button" (click)="postEmployeeDetails()" class="btn btn-primary">Add</button>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+ <!--  <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -102,12 +102,12 @@
             <span aria-hidden="true">&times;</span></button>
         </div>
         <div class="modal-body">
-          <form [formGroup]="formValue">
+          <form [formGroup]="formValue"> -->
             <!--  <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">ID</label>
             <input type="text" formControlName="id" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
           </div> -->
-            <div class="mb-3">
+           <!--  <div class="mb-3">
               <label for="exampleInputPassword1" class="form-label">First Name</label>
               <input type="text" formControlName="firstname" class="form-control" id="exampleInputPassword1">
             </div>
@@ -136,4 +136,4 @@
           <button type="button" (click)="postEmployeeDetails()" class="btn btn-primary">Add</button>
         </div>
       </div>
-    </div>
+    </div> -->
