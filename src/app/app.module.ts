@@ -10,6 +10,7 @@ import {FormsModule} from '@angular/forms';
 import { DashComponent } from './dash/dash.component';
 import { VarshanComponent } from './varshan/varshan.component';
 import { PrakshComponent } from './praksh/praksh.component';
+import { VikasGlobalComponent } from './vikas-global/vikas-global.component';
 
 
 
@@ -20,6 +21,7 @@ import { PrakshComponent } from './praksh/praksh.component';
     DashComponent,
     VarshanComponent,
     PrakshComponent,
+    VikasGlobalComponent,
 
   ],
   imports: [
